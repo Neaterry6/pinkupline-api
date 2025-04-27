@@ -1,6 +1,6 @@
 const express = require("express");
 const fs = require("fs");
-const { pickupLines, rizzLines } = require("./pickuplines"); // Ensure filename matches exactly
+const { pickupLines, rizzLines } = require("./pickupLines"); // Ensure filename matches exactly
 
 const app = express();
 app.use(express.json());
