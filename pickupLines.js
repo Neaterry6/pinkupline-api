@@ -37,7 +37,7 @@ const rizzLines = [
     "Are you single? Because I notice every single thing about you is on point.",
     "Well, my name is Têmí, but people call me Headboy because if you go home with me now, as expected, you'll expect head.",
     "Hey, I like the fact that you're very pretty, and I'd love to make you my sweetie. So, can I have your handle?",
-    "I don't know why everywhere seems to be hot. Ohhh, I get it—everyone here's hot, that's why the room is hot."
+    "I don't know why everywhere seems to be hot. Ohhh, I get it—everyone here's hot, that's why the room is hot.",
     "Call me a magician, because I’m about to make your number appear in my phone.",
     "You don’t need a compass, because you’ve already found the way to my heart.",
     "I heard you like bad boys—good thing I’m bad at everything.",
