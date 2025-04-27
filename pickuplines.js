@@ -60,4 +60,4 @@ const rizzLines = [
     "You must be a lucky charm, because my life is better with you in it."
 ];
 
-module.exports = { pickupLines, rizzLines }
+module.exports = { pickupLines, rizzLines };
