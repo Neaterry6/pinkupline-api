@@ -1,7 +1,7 @@
 {
   "name": "pickup-line-api",
   "version": "1.0.0",
-  "description": "An API that generates random pickup lines and rizz lines.",
+  "description": "An API that generates random pickup and rizz lines.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -13,6 +13,5 @@
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
-  "author": "Ayanfe ",
+  "author": "Ayanfe",
   "license": "MIT"
-}
