@@ -31,11 +31,12 @@ app.post("/add", (req, res) => {
         rizzLines.push(line);
     }
 
-    fs.writeFileSync("./pickupLines.js", `module.exports = { pickupLines: ${JSON.stringify(pickupLines)}, rizzLines: ${JSON.stringify(rizzLines)} };`);
+    // Update the pickupLines.js file dynamically
+    fs.writeFileSync("./pickupLines.js", `module.exports = { pickupLines: ${JSON.stringify(pickupLines, null, 2)}, rizzLines: ${JSON.stringify(rizzLines, null, 2)} };`);
 
     res.json({ message: "Pickup/rizz line added!", type, line });
 });
 
 // Start the server
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
