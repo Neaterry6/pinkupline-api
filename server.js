@@ -1,6 +1,6 @@
 const express = require("express");
 const fs = require("fs");
-const { pickupLines, rizzLines } = require("./pickupLines");
+const { pickupLines, rizzLines } = require("./pickuplines"); // Ensure filename matches exactly
 
 const app = express();
 app.use(express.json());
@@ -31,8 +31,8 @@ app.post("/add", (req, res) => {
         rizzLines.push(line);
     }
 
-    // Update the pickupLines.js file dynamically
-    fs.writeFileSync("./pickupLines.js", `module.exports = { pickupLines: ${JSON.stringify(pickupLines, null, 2)}, rizzLines: ${JSON.stringify(rizzLines, null, 2)} };`);
+    // Update pickuplines.js file dynamically
+    fs.writeFileSync("./pickuplines.js", `module.exports = { pickupLines: ${JSON.stringify(pickupLines, null, 2)}, rizzLines: ${JSON.stringify(rizzLines, null, 2)} };`);
 
     res.json({ message: "Pickup/rizz line added!", type, line });
 });
